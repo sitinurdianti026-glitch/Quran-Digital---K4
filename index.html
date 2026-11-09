@@ -1,0 +1,209 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quran Digital</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">
+            <span class="logo-icon">☪</span>
+            <span>Quran<span class="logo-green">Digital</span></span>
+        </div>
+
+        <div class="nav-links">
+            <a href="#beranda">Beranda</a>
+            <a href="#daftar-surah">Daftar Surah</a>
+            <a href="#baca-quran">Baca Al-Qur'an</a>
+        </div>
+    </nav>
+
+
+    <!-- Hero Section -->
+    <section class="hero" id="beranda">
+
+        <div class="hero-content">
+
+            <p class="hero-label">
+                ✦ AL-QUR'AN DIGITAL ✦
+            </p>
+
+            <h1>
+                Baca Al-Qur'an,<br>
+                <span>Tenangkan Hati.</span>
+            </h1>
+
+            <p class="hero-description">
+                Temukan ketenangan melalui ayat-ayat suci
+                Al-Qur'an. Baca, pahami, dan dengarkan
+                kapan saja dan di mana saja.
+            </p>
+
+            <a href="#daftar-surah" class="hero-button">
+                Mulai Membaca →
+            </a>
+
+        </div>
+
+        <div class="hero-decoration">
+            <div class="moon">☪</div>
+            <div class="decoration-text">
+                بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ
+            </div>
+        </div>
+
+    </section>
+
+
+    <!-- Daftar Surah -->
+    <section class="surah-section" id="daftar-surah">
+
+        <div class="section-heading">
+            <div>
+                <p class="section-label">JELAJAHI AL-QUR'AN</p>
+                <h2>Daftar Surah</h2>
+                <p class="section-description">
+                    Pilih surah yang ingin kamu baca hari ini.
+                </p>
+            </div>
+
+            <div class="surah-count">
+                114 Surah
+            </div>
+        </div>
+
+
+        <!-- Pencarian -->
+        <div class="search-box">
+
+            <span class="search-icon">⌕</span>
+
+            <input
+                type="text"
+                id="cariSurah"
+                placeholder="Cari nama surah..."
+            >
+
+        </div>
+
+
+        <!-- Kartu Surah -->
+        <div class="surah-grid" id="daftarSurah">
+
+            <p class="loading">
+                Memuat daftar surah...
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- Bagian Membaca Al-Qur'an -->
+    <section class="reading-section" id="baca-quran">
+
+        <div class="reading-heading">
+            <p class="section-label">BACA DAN PAHAMI</p>
+            <h2>Al-Qur'an</h2>
+            <p>
+                Baca ayat suci beserta terjemahan bahasa Indonesia.
+            </p>
+        </div>
+
+
+        <!-- Informasi Surah -->
+        <div class="surah-info" id="informasiSurah">
+
+            <div class="surah-info-content">
+
+                <p class="surah-info-label">
+                    SURAH PILIHAN
+                </p>
+
+                <h2 id="namaSurah">
+                    Al-Fatihah
+                </h2>
+
+                <p id="detailSurah">
+                    Memuat informasi surah...
+                </p>
+
+            </div>
+
+            <div class="surah-info-arab">
+                بِسْمِ اللَّهِ
+            </div>
+
+        </div>
+
+
+        <!-- Audio -->
+        <div class="audio-container">
+
+            <div class="audio-title">
+                <div class="audio-icon">♫</div>
+
+                <div>
+                    <h3>Audio Murottal</h3>
+                    <p>Dengarkan bacaan Al-Qur'an</p>
+                </div>
+            </div>
+
+            <audio id="audioSurah" controls>
+                Browser tidak mendukung audio.
+            </audio>
+
+        </div>
+
+
+        <!-- Isi Ayat -->
+        <div class="ayat-container" id="isiAyat">
+
+            <div class="empty-state">
+                <div class="empty-icon">☪</div>
+
+                <h3>Mulai Membaca Al-Qur'an</h3>
+
+                <p>
+                    Pilih salah satu surah dari daftar
+                    di atas untuk menampilkan ayat.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Footer -->
+    <footer class="footer">
+
+        <div class="footer-logo">
+            ☪ QuranDigital
+        </div>
+
+        <p>
+            Membaca Al-Qur'an, mendekatkan diri kepada Allah.
+        </p>
+
+        <p class="footer-small">
+            Data Al-Qur'an menggunakan AlQuran Cloud API.
+        </p>
+
+    </footer>
+
+
+    <script src="js/script.js"></script>
+
+</body>
+</html>
